@@ -1,0 +1,57 @@
+.footer{
+    background: rgb(0, 0, 0);
+}
+
+.conteudo-2 {
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact ul span strong {
+    font-size: 40px;
+    color: white;
+}
+
+.disponibilidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #dedede;
+}
+
+.disponibilidade p {
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 700px) {
+    .conteudo-2 {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-2 {
+        gap: 50px;
+    }
+    .contact ul span strong {
+        font-size: 30px;
+        color: white;
+    }
+    .contact ul {
+        gap: 5px;
+    }
+}
